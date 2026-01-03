@@ -1,7 +1,23 @@
+// Global state
 const state = {
     improvingParam: null,
-    worseningParam: null
+    worseningParam: null,
+    engine: null
 };
+
+// Initialize engine on page load
+window.addEventListener('DOMContentLoaded', async () => {
+    log('Initializing TRIZ Engine...');
+    state.engine = new TRIZEngine();
+
+    try {
+        await state.engine.loadData();
+        log('✓ Engine ready. All data loaded.');
+    } catch (error) {
+        log(`✗ Failed to load engine: ${error.message}`);
+        alert('Failed to load TRIZ data. Please refresh the page.');
+    }
+});
 
 function validateAndNext(currentStep) {
     if (currentStep === 1) {
@@ -34,6 +50,11 @@ function goToStep(num) {
 }
 
 async function analyzeInput(type) {
+    if (!state.engine || !state.engine.dataLoaded) {
+        alert('Engine is not ready yet. Please wait a moment.');
+        return;
+    }
+
     const inputEl = document.getElementById(`input-${type}`);
     const text = inputEl.value;
 
@@ -48,19 +69,14 @@ async function analyzeInput(type) {
     inputEl.disabled = true;
 
     try {
-        const response = await fetch('/api/normalize', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text: text })
-        });
-
-        const data = await response.json();
+        // Use local engine instead of API
+        const result = state.engine.normalizeInputToParameter(text);
 
         // Print Internal AI Logs (Transparency)
-        data.logs.forEach(l => log(`[AI] ${l}`));
+        result.logs.forEach(l => log(`[AI] ${l}`));
 
-        if (data.match) {
-            const param = data.match;
+        if (result.match) {
+            const param = result.match;
             // Update State
             if (type === 'improving') state.improvingParam = param;
             if (type === 'worsening') state.worseningParam = param;
@@ -76,7 +92,7 @@ async function analyzeInput(type) {
             alert("AI could not confidently identify the parameter. Please try specific keywords like 'Weight' or 'Speed'.");
         }
     } catch (e) {
-        log(`Error reaching API: ${e}`);
+        log(`Error analyzing input: ${e.message}`);
     } finally {
         inputEl.disabled = false;
     }
@@ -91,6 +107,11 @@ function checkReadyToSolve() {
 }
 
 async function solveContradiction() {
+    if (!state.engine || !state.engine.dataLoaded) {
+        alert('Engine is not ready yet.');
+        return;
+    }
+
     goToStep(3);
     log('Initiating Matrix Lookup...');
 
@@ -98,16 +119,11 @@ async function solveContradiction() {
     container.innerHTML = '<div style="color:white">Calculating...</div>';
 
     try {
-        const response = await fetch('/api/solve', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                improving_id: state.improvingParam.id,
-                worsening_id: state.worseningParam.id
-            })
-        });
-
-        const report = await response.json();
+        // Use local engine instead of API
+        const report = state.engine.solveContradiction(
+            state.improvingParam.id,
+            state.worseningParam.id
+        );
 
         // Log Logic
         report.execution_log.forEach(l => log(`[Engine] ${l}`));
@@ -131,8 +147,8 @@ async function solveContradiction() {
         });
 
     } catch (e) {
-        log(`Error solving: ${e}`);
-        container.innerHTML = 'Error generating solution.';
+        log(`Error solving: ${e.message}`);
+        container.innerHTML = '<div style="color:white">Error generating solution.</div>';
     }
 }
 
@@ -146,4 +162,20 @@ function restart() {
     document.getElementById('btn-solve').disabled = true;
     goToStep(1);
     log('System Reset.');
+}
+
+// Help Modal Functions
+function openHelpModal() {
+    const modal = document.getElementById('help-modal');
+    modal.classList.add('active');
+    // Close when clicking outside
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeHelpModal();
+        }
+    });
+}
+
+function closeHelpModal() {
+    document.getElementById('help-modal').classList.remove('active');
 }

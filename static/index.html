@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Assisted TRIZ Solver</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="AI-powered TRIZ contradiction solver - Transform engineering problems into innovative solutions using Altshuller's matrix.">
+    <link rel="stylesheet" href="css/style.css?v=1.1">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
@@ -24,6 +26,10 @@
                 <div class="step" id="step2-indicator">2. Contradiction</div>
                 <div class="step" id="step3-indicator">3. Solution</div>
             </div>
+
+            <button class="btn-help" onclick="openHelpModal()">
+                <span>?</span> How to Use & Algorithm
+            </button>
 
             <div class="console-log" id="ai-console">
                 <div class="console-title">AI ENGINE LOGS</div>
@@ -114,11 +120,12 @@
                     </div>
 
                     <div class="ideality-section">
-                        <h3>Ideality Audit</h3>
-                        <div class="ideality-controls">
-                            <button class="btn-outline" onclick="openIdealityModal()">Calculate Optimization
-                                Score</button>
-                        </div>
+                        <h3>About TRIZ</h3>
+                        <p style="color: #aaa; line-height: 1.6;">
+                            TRIZ (Theory of Inventive Problem Solving) was developed by Genrich Altshuller
+                            through analyzing over 200,000 patents. The contradiction matrix helps engineers
+                            find proven innovative principles to resolve technical conflicts.
+                        </p>
                     </div>
 
                     <div class="actions">
@@ -127,8 +134,56 @@
                 </div>
             </section>
         </main>
+
+        <footer style="text-align: center; padding: 20px; color: #666; font-size: 0.9em; margin-top: auto;">
+            Developed by Wesley Chang @2026
+        </footer>
     </div>
 
+    <!-- Help Modal -->
+    <div class="modal-overlay" id="help-modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Usage & Algorithm Principle</h3>
+                <button class="modal-close" onclick="closeHelpModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4>How to Use</h4>
+                <ol>
+                    <li><strong>Define System:</strong> Enter the name of the engineering component you want to improve.
+                    </li>
+                    <li><strong>Define Contradiction:</strong>
+                        <ul>
+                            <li>Describe what you want to <em>IMPROVE</em> (e.g., "Speed", "Strength").</li>
+                            <li>Describe what gets <em>WORSE</em> as a result (e.g., "Weight", "Cost").</li>
+                            <li>The AI will automatically map these to one of the 39 standard TRIZ parameters.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Generate Solution:</strong> Click "Generate Solution" to see the Inventive Principles
+                        recommended by the matrix.</li>
+                </ol>
+
+                <h4>Algorithm Principle</h4>
+                <p>
+                    This tool is based on the <strong>Theory of Inventive Problem Solving (TRIZ)</strong> developed by
+                    Genrich Altshuller.
+                </p>
+                <p>
+                    The core engine uses the classic <strong>Contradiction Matrix</strong>, a 39x39 grid that maps
+                    technical conflicts.
+                    When you improve one parameter (e.g., <em>Speed</em>) and another worsens (e.g.,
+                    <em>Repairability</em>), the matrix provides specific <strong>Inventive Principles</strong> (from a
+                    set of 40) that historically solved this specific type of conflict in patent literature.
+                </p>
+                <p>
+                    Instead of compromising, TRIZ encourages finding a solution that satisfies both requirements.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load engine first, then main -->
+    <script src="js/engine.js"></script>
     <script src="js/main.js"></script>
 </body>
 

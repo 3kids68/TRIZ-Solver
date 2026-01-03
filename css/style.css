@@ -540,6 +540,7 @@ footer {
 
     .console-log {
         display: none;
+        /* Hide log on small mobile to save space */
     }
 
     .content-area {

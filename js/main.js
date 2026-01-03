@@ -163,3 +163,19 @@ function restart() {
     goToStep(1);
     log('System Reset.');
 }
+
+// Help Modal Functions
+function openHelpModal() {
+    const modal = document.getElementById('help-modal');
+    modal.classList.add('active');
+    // Close when clicking outside
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeHelpModal();
+        }
+    });
+}
+
+function closeHelpModal() {
+    document.getElementById('help-modal').classList.remove('active');
+}

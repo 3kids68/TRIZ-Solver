@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Assisted TRIZ Solver</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Header -->
+        <header class="sidebar">
+            <div class="logo-area">
+                <h1>TRIZ <span class="highlight">SOLVER</span></h1>
+                <p>Advanced Engineering Solution Engine</p>
+            </div>
+            <div class="progress-steps">
+                <div class="step active" id="step1-indicator">1. Context</div>
+                <div class="step" id="step2-indicator">2. Contradiction</div>
+                <div class="step" id="step3-indicator">3. Solution</div>
+            </div>
+
+            <div class="console-log" id="ai-console">
+                <div class="console-title">AI ENGINE LOGS</div>
+                <div class="console-content" id="log-content">
+                    <span class="log-line">> System Initialized...</span>
+                    <span class="log-line">> Waiting for input...</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content-area">
+
+            <!-- Step 1: System Definition -->
+            <section id="step-1" class="wizard-step active">
+                <div class="card">
+                    <h2>Define Your Engineering System (定義系統)</h2>
+                    <p class="subtitle">To get the best results, please describe the specific component you are working
+                        on.</p>
+
+                    <div class="input-group">
+                        <label>System Name (系統名稱)</label>
+                        <input type="text" id="sys-name" placeholder="E.g. Hydraulic Control Valve, Robot Arm Joint">
+                    </div>
+
+                    <div class="question-guide">
+                        <p><strong>💡 Why is this important?</strong><br>Identifying the exact system boundary helps AI
+                            filter out irrelevant principles.</p>
+                    </div>
+
+                    <button class="btn-primary" onclick="validateAndNext(1)">Next Step &rarr;</button>
+                </div>
+            </section>
+
+            <!-- Step 2: Contradiction -->
+            <section id="step-2" class="wizard-step">
+                <div class="card">
+                    <h2>Define Contradiction (定義矛盾)</h2>
+                    <p class="subtitle">Describe the conflict in natural language. AI will map it to TRIZ parameters.
+                    </p>
+
+                    <!-- Improving -->
+                    <div class="ai-input-box">
+                        <label>What do you want to IMPROVE? (改善參數)</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="input-improving" placeholder="e.g. I want to make it move faster">
+                            <button class="btn-icon" onclick="analyzeInput('improving')">🔍</button>
+                        </div>
+                        <div class="ai-suggestion" id="suggestion-improving" style="display:none">
+                            <span>Detected: </span>
+                            <strong id="res-improving-name">Speed</strong>
+                            <span class="badge" id="res-improving-id">ID: 9</span>
+                        </div>
+                    </div>
+
+                    <!-- Worsening -->
+                    <div class="ai-input-box">
+                        <label>What gets WORSE? (惡化參數)</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="input-worsening" placeholder="e.g. But it gets too hot">
+                            <button class="btn-icon" onclick="analyzeInput('worsening')">🔍</button>
+                        </div>
+                        <div class="ai-suggestion" id="suggestion-worsening" style="display:none">
+                            <span>Detected: </span>
+                            <strong id="res-worsening-name">Temperature</strong>
+                            <span class="badge" id="res-worsening-id">ID: 17</span>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn-secondary" onclick="goToStep(1)">&larr; Back</button>
+                        <button class="btn-primary" onclick="solveContradiction()" id="btn-solve" disabled>Generate
+                            Solution &rarr;</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 3: Results -->
+            <section id="step-3" class="wizard-step">
+                <div class="card result-card">
+                    <div class="result-header">
+                        <h2>Solution Matrix</h2>
+                        <span class="strategy-tag" id="strategy-display">Standard Solution</span>
+                    </div>
+
+                    <div class="principles-grid" id="principles-container">
+                        <!-- Principles will be injected here -->
+                    </div>
+
+                    <div class="ideality-section">
+                        <h3>Ideality Audit</h3>
+                        <div class="ideality-controls">
+                            <button class="btn-outline" onclick="openIdealityModal()">Calculate Optimization
+                                Score</button>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn-secondary" onclick="restart()">Start Over</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

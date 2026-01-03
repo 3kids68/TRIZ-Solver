@@ -1,0 +1,564 @@
+[
+  {
+    "id": 1,
+    "name": "Weight of moving object (移動物體的重量)",
+    "keywords": [
+      "weight",
+      "mass",
+      "heavy",
+      "light",
+      "moving",
+      "重量",
+      "質量",
+      "重",
+      "輕",
+      "移動"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Weight of stationary object (靜止物體的重量)",
+    "keywords": [
+      "weight",
+      "mass",
+      "heavy",
+      "light",
+      "stationary",
+      "fixed",
+      "重量",
+      "質量",
+      "靜止",
+      "固定"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Length of moving object (移動物體的長度)",
+    "keywords": [
+      "length",
+      "long",
+      "short",
+      "dimension",
+      "moving",
+      "長度",
+      "尺寸",
+      "長",
+      "短",
+      "移動"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Length of stationary object (靜止物體的長度)",
+    "keywords": [
+      "length",
+      "long",
+      "short",
+      "dimension",
+      "stationary",
+      "fixed",
+      "長度",
+      "尺寸",
+      "長",
+      "短",
+      "靜止"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Area of moving object (移動物體的面積)",
+    "keywords": [
+      "area",
+      "surface",
+      "size",
+      "moving",
+      "面積",
+      "表面積",
+      "大小",
+      "移動"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Area of stationary object (靜止物體的面積)",
+    "keywords": [
+      "area",
+      "surface",
+      "size",
+      "stationary",
+      "面積",
+      "表面積",
+      "大小",
+      "靜止"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Volume of moving object (移動物體的體積)",
+    "keywords": [
+      "volume",
+      "space",
+      "size",
+      "moving",
+      "體積",
+      "空間",
+      "移動"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Volume of stationary object (靜止物體的體積)",
+    "keywords": [
+      "volume",
+      "space",
+      "size",
+      "stationary",
+      "體積",
+      "空間",
+      "靜止"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Speed (速度)",
+    "keywords": [
+      "speed",
+      "velocity",
+      "fast",
+      "slow",
+      "rate",
+      "速度",
+      "快",
+      "慢",
+      "速率"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Force (力)",
+    "keywords": [
+      "force",
+      "strength",
+      "power",
+      "torque",
+      "pressure",
+      "load",
+      "力",
+      "強度",
+      "力量",
+      "扭矩",
+      "壓力",
+      "負載"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Stress or pressure (應力或壓力)",
+    "keywords": [
+      "stress",
+      "pressure",
+      "tension",
+      "compression",
+      "應力",
+      "壓力",
+      "張力",
+      "壓縮"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Shape (形狀)",
+    "keywords": [
+      "shape",
+      "form",
+      "geometry",
+      "contour",
+      "configuration",
+      "形狀",
+      "外形",
+      "幾何",
+      "輪廓"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Stability of the object's composition (物體結構的穩定性)",
+    "keywords": [
+      "stability",
+      "composition",
+      "integrity",
+      "structure",
+      "穩定性",
+      "結構",
+      "成分",
+      "完整性"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Strength (強度)",
+    "keywords": [
+      "strength",
+      "durability",
+      "resistance",
+      "fragility",
+      "強度",
+      "耐用",
+      "抵抗力",
+      "脆弱"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Durability of moving object (移動物體的耐久性)",
+    "keywords": [
+      "durability",
+      "life",
+      "wear",
+      "moving",
+      "耐久性",
+      "壽命",
+      "磨損",
+      "移動"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Durability of non-moving object (靜止物體的耐久性)",
+    "keywords": [
+      "durability",
+      "life",
+      "wear",
+      "stationary",
+      "耐久性",
+      "壽命",
+      "磨損",
+      "靜止"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Temperature (溫度)",
+    "keywords": [
+      "temperature",
+      "heat",
+      "cold",
+      "thermal",
+      "hot",
+      "溫度",
+      "熱",
+      "冷",
+      "溫"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Illumination intensity (光照強度)",
+    "keywords": [
+      "illumination",
+      "light",
+      "brightness",
+      "intensity",
+      "dark",
+      "光照",
+      "亮度",
+      "光",
+      "明暗"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Energy spent by moving object (移動物體消耗的能量)",
+    "keywords": [
+      "energy",
+      "power",
+      "consumption",
+      "moving",
+      "能量",
+      "功耗",
+      "消耗",
+      "移動"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Energy spent by stationary object (靜止物體消耗的能量)",
+    "keywords": [
+      "energy",
+      "power",
+      "consumption",
+      "stationary",
+      "能量",
+      "功耗",
+      "消耗",
+      "靜止"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Power (功率)",
+    "keywords": [
+      "power",
+      "wattage",
+      "output",
+      "功率",
+      "瓦數",
+      "輸出"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Loss of Energy (能量損失)",
+    "keywords": [
+      "loss of energy",
+      "waste",
+      "efficiency",
+      "dissipation",
+      "能量損失",
+      "浪費",
+      "效率",
+      "散失"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Loss of substance (物質損失)",
+    "keywords": [
+      "loss of substance",
+      "material loss",
+      "waste",
+      "leak",
+      "物質損失",
+      "材料損失",
+      "浪費",
+      "洩漏"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Loss of Information (信息損失)",
+    "keywords": [
+      "loss of information",
+      "data loss",
+      "error",
+      "noise",
+      "信息損失",
+      "數據損失",
+      "錯誤",
+      "雜訊"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Loss of Time (時間損失)",
+    "keywords": [
+      "loss of time",
+      "delay",
+      "slow",
+      "wait",
+      "時間損失",
+      "延遲",
+      "慢",
+      "等待"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Quantity of substance/the matter (物質或材料的數量)",
+    "keywords": [
+      "quantity",
+      "amount",
+      "material",
+      "substance",
+      "數量",
+      "材料",
+      "物質"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Reliability (可靠性)",
+    "keywords": [
+      "reliability",
+      "dependability",
+      "failure",
+      "trust",
+      "可靠性",
+      "故障",
+      "信任"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Measurement accuracy (測量精度)",
+    "keywords": [
+      "measurement",
+      "accuracy",
+      "precision",
+      "error",
+      "測量",
+      "精度",
+      "準確",
+      "誤差"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Manufacturing precision (製造精度)",
+    "keywords": [
+      "manufacturing",
+      "precision",
+      "tolerance",
+      "quality",
+      "製造",
+      "精度",
+      "公差",
+      "品質"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Object-affected harmful factors (物體受到的有害因素)",
+    "keywords": [
+      "harmful",
+      "external",
+      "damage",
+      "environmental",
+      "有害",
+      "外部",
+      "損害",
+      "環境"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Object-generated harmful factors (物體產生的有害因素)",
+    "keywords": [
+      "harmful",
+      "internal",
+      "pollution",
+      "side effect",
+      "有害",
+      "內部",
+      "污染",
+      "副作用"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Ease of manufacture (製造難易度)",
+    "keywords": [
+      "manufacture",
+      "production",
+      "fabrication",
+      "easy",
+      "complex",
+      "製造",
+      "生產",
+      "加工",
+      "容易",
+      "複雜"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Ease of operation (操作難易度)",
+    "keywords": [
+      "operation",
+      "use",
+      "control",
+      "easy",
+      "hard",
+      "操作",
+      "使用",
+      "控制",
+      "容易",
+      "困難"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Ease of repair (維修難易度)",
+    "keywords": [
+      "repair",
+      "maintenance",
+      "fix",
+      "service",
+      "維修",
+      "保養",
+      "修理"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Adaptability or versatility (適應性或多用性)",
+    "keywords": [
+      "adaptability",
+      "versatility",
+      "flexible",
+      "multi-use",
+      "適應性",
+      "多用性",
+      "靈活",
+      "通用"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Complexity of device (裝置的複雜性)",
+    "keywords": [
+      "complexity",
+      "complicated",
+      "parts",
+      "simple",
+      "complex",
+      "複雜性",
+      "結構",
+      "零件",
+      "簡單"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Difficulty of detecting and measuring (檢測與測量的困難程度)",
+    "keywords": [
+      "detecting",
+      "measuring",
+      "monitoring",
+      "difficult",
+      "檢測",
+      "測量",
+      "監控",
+      "困難"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Extent of automation (自動化程度)",
+    "keywords": [
+      "automation",
+      "manual",
+      "human",
+      "robot",
+      "automatic",
+      "自動化",
+      "人工",
+      "機器人",
+      "自動"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Productivity (生產率)",
+    "keywords": [
+      "productivity",
+      "output",
+      "efficiency",
+      "rate",
+      "生產率",
+      "產能",
+      "效率",
+      "速度"
+    ]
+  }
+]

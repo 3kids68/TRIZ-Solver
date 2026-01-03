@@ -1,0 +1,363 @@
+[
+    {
+        "id": 1,
+        "name": "Segmentation (分割)",
+        "description": "Divide an object into independent parts. Make an object easy to dismantle. Increase the degree of fragmentation or segmentation. (將物體分成獨立的部分；使物體成為可拆卸的；增加物體的分割程度。)",
+        "examples": [
+            "Modular furniture (組合家具)",
+            "Venetian blinds (百葉窗)",
+            "Garden hose with localized sections (分段式軟管)"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Taking out (抽取/分離)",
+        "description": "Separate an interfering part or property from an object, or single out the only necessary part (or property) of an object. (從物體中分離出干擾部分或特性，或僅選出必要的部份或特性。)",
+        "examples": [
+            "Locate a noisy compressor outside the building (將吵雜的壓縮機移至屋外)",
+            "Sound of a dog barking without the dog (security alarm) (只有狗叫聲的防盜器)"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Local quality (局部品質)",
+        "description": "Change an object's structure from uniform to non-uniform, change an external environment (or external influence) from uniform to non-uniform. Make each part of an object function in conditions most suitable for its operation. (將物體結構或外部環境由均勻改為不均勻。讓物體的每一部分都在最適宜的條件下運作。)",
+        "examples": [
+            "Keyboard with specific key shapes (人體工學鍵盤)",
+            "Pencil with eraser (帶橡皮擦的鉛筆)"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Asymmetry (不對稱)",
+        "description": "Change the shape of an object from symmetrical to asymmetrical. If an object is asymmetrical, increase its degree of asymmetry. (將物體形狀由對稱改為不對稱。如果不對稱，則增加其不對稱程度。)",
+        "examples": [
+            "Mixing vessels with asymmetrical baffles (非對稱攪拌葉片)",
+            "Asymmetrical tires for better grip (非對稱胎紋)"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Merging (合併)",
+        "description": "Bring closer together (or merge) identical or similar objects, assemble identical or similar parts to perform parallel operations. (將相同或相似的物體合併或靠近。合併相同或相似的部件以進行平行操作。)",
+        "examples": [
+            "Multi-pane glass (雙層玻璃)",
+            "Parallel processing computers (平行運算電腦)"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Universality (多用性)",
+        "description": "Make a part or object perform multiple functions; eliminate the need for other parts. (使一個部件或物體能執行多種功能，從而消除對其他部件的需求。)",
+        "examples": [
+            "Swiss Army Knife (瑞士刀)",
+            "Sofa bed (沙發床)"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Nesting (套疊)",
+        "description": "Place one object inside another; place each object, in turn, inside the other. Make one part pass through a cavity in the other. (將一個物體放入另一個物體中。讓一個部件穿過另一個部件的空腔。)",
+        "examples": [
+            "Matryoshka dolls (俄羅斯娃娃)",
+            "Telescopic antenna (伸縮天線)"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Anti-weight (反重量/配重)",
+        "description": "Compensate for the weight of an object by using lift, or combining it with other objects that provide lift. (利用升力或與其他提供升力的物體結合，來補償物體的重量。)",
+        "examples": [
+            "Counterweight in elevator (電梯配重)",
+            "Hydrofoils (水翼船)"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Preliminary anti-action (預先反作用)",
+        "description": "If it will be necessary to do an action with both harmful and useful effects, this action should be replaced with anti-actions to control harmful effects. Create beforehand stresses in an object that will oppose known undesirable working stresses later on. (如果必須進行具有副作用的動作，則預先進行反作用以控制副作用。預先對物體施加應力，以抵抗後來可能出現的工作應力。)",
+        "examples": [
+            "Pre-stressed concrete (預力混凝土)",
+            "Masking tape before painting (遮蔽膠帶)"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Preliminary action (預先作用)",
+        "description": "Perform, before it is needed, the required change of an object (either fully or partially). Pre-arrange objects such that they can come into action from the most convenient place and without losing time for their delivery. (預先執行所需的改變。預先排列物體，使其能從最方便的位置開始作用，且不浪費傳送時間。)",
+        "examples": [
+            "Pre-pasted wallpaper (預塗膠壁紙)",
+            "Sterilizing instruments before surgery (術前消毒)"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Beforehand cushioning (預先防護)",
+        "description": "Prepare emergency means beforehand to compensate for the relatively low reliability of an object. (預先準備緊急措施，以補償物體較低的可靠性。)",
+        "examples": [
+            "Airbag (安全氣囊)",
+            "Spare tire (備胎)"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Equipotentiality (等勢性)",
+        "description": "In a potential field, limit position changes (e.g. change operating conditions to eliminate the need to raise or lower objects in a gravity field). (在位能場中，限制位置的改變，例如改變工作條件以消除在重力場中升降物體的需求。)",
+        "examples": [
+            "Car repair pit (汽車維修坑)",
+            "Locks in a canal (運河船閘)"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Inversion ('The other way round') (反向作用)",
+        "description": "Invert the action(s) used to solve the problem (e.g. instead of cooling an object, heat it). Make movable parts (or the external environment) fixed, and fixed parts movable. Turn the object (or process) 'upside down'. (反轉解決問題的動作。使移動部件固定，固定部件移動。將物體或過程上下顛倒。)",
+        "examples": [
+            "Treadmill (跑步機)",
+            "Cleaning parts by vibrating the container instead of the parts (震動容器清洗零件)"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Spheroidality - Curvature (曲面化)",
+        "description": "Instead of using rectilinear parts, surfaces, or forms, use curvilinear ones; move from flat surfaces to spherical ones; from parts formed as a cube (parallelepiped) to ball-shaped structures. Use rollers, balls, spirals, domes. (使用曲線部件、表面或形狀代替直線的。從平面轉為球面。使用滾輪、球體、螺旋、圓頂。)",
+        "examples": [
+            "Ballpoint pen (原子筆)",
+            "Arched bridge (拱橋)"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Dynamics (動態化)",
+        "description": "Allow (or design) the characteristics of an object, external environment, or process to change to be optimal or to find an optimal operating condition. Divide an object into parts capable of movement relative to each other. (讓物體、環境或過程的特性可變，以達到最佳狀態。將物體分為可相對移動的部分。)",
+        "examples": [
+            "Adjustable steering wheel (可調方向盤)",
+            "Folding chair (折疊椅)"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Partial or excessive actions (不足或過度的作用)",
+        "description": "If 100 percent of an object is hard to achieve using a given solution method then, by using 'slightly less' or 'slightly more' of the same method, the problem may be considerably easier to solve. (如果該方法難以達到100%的效果，試著用「少一點」或「多一點」的方法，可能會更容易解決問題。)",
+        "examples": [
+            "Painting with a spray (overspraying and using stencils) (噴漆遮蔽)",
+            "Rough cutting then finishing (粗加工後精加工)"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Another dimension (維度增加)",
+        "description": "To move an object in two- or three-dimensional space. Use a multi-story arrangement of objects instead of a single-story arrangement. Tilt or re-orient the object, lay it on its side. (將物體移動到二維或三維空間。使用多層排列代替單層。傾斜或重新定向物體。)",
+        "examples": [
+            "Multi-story car park (多層停車場)",
+            "Double-sided PCB (雙面電路板)"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Mechanical vibration (機械振動)",
+        "description": "Cause an object to oscillate or vibrate. Increase its frequency (even up to the ultrasonic). Use an object's resonant frequency. (使物體振盪或振動。增加頻率（甚至到超音波）。使用共振頻率。)",
+        "examples": [
+            "Electric toothbrush (電動牙刷)",
+            "Ultrasonic cleaning (超音波清洗)"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Periodic action (週期性作用)",
+        "description": "Instead of continuous action, use periodic or pulsed actions. If an action is already periodic, change the periodic magnitude or frequency. (使用週期性或脈衝動作代替連續動作。如果動作已是週期性的，改變其幅度或頻率。)",
+        "examples": [
+            "ABS brakes (防鎖死煞車)",
+            "Impact wrench (衝擊扳手)"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Continuity of useful action (有效作用的連續性)",
+        "description": "Carry on work continuously; make all parts of an object (or system) work at full load, all the time. Eliminate all idle or intermittent actions or work. (持續進行工作；使物體的所有部分隨時滿載工作。消除所有閒置或間歇的動作。)",
+        "examples": [
+            "Flywheel (飛輪)",
+            "Continuous casting of steel (連續鑄造)"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Skipping (快速通過)",
+        "description": "Conduct a process, or certain stages (e.g. destructible, harmful or hazardous operations) at high speed. (高速進行過程或某些階段（如破壞性或有害的操作）。)",
+        "examples": [
+            "Cutting plastic quickly to avoid melting (快速切割塑膠)",
+            "Run across hot coals (過火碳)"
+        ]
+    },
+    {
+        "id": 22,
+        "name": "'Blessing in disguise' or 'Turn Lemons into Lemonade' (變害為利)",
+        "description": "Use harmful factors (particularly, harmful effects of the environment or surroundings) to achieve a positive effect. (利用有害因素（特別是環境的有害影響）來達到正面效果。)",
+        "examples": [
+            "Use waste heat for heating (廢熱回收)",
+            "Using compost (堆肥)"
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Feedback (回饋)",
+        "description": "Introduce feedback (referring, cross-checking) to improve a process or action. If feedback is already used, change its magnitude or influence. (引入回饋以改善過程或動作。如果已有回饋，改變其幅度或影響。)",
+        "examples": [
+            "Thermostat (恆溫器)",
+            "Engine management system (引擎管理系統)"
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Intermediary (中介物)",
+        "description": "Use an intermediary carrier article or intermediary process. Merge one object temporarily with another (which can be easily removed). (使用中介載體或中介過程。暫時將一個物體與另一個（易於移除的）物體合併。)",
+        "examples": [
+            "Guitar pick (吉他撥片)",
+            "Catalyst in reaction (催化劑)"
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Self-service (自服務)",
+        "description": "Make an object serve itself by performing auxiliary helpful functions. Use waste resources, energy, or substances. (使物體透過執行輔助功能來服務自己。利用廢棄資源、能量或物質。)",
+        "examples": [
+            "Self-cleaning oven (自潔烤箱)",
+            "Self-winding watch (自動上鍊手錶)"
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Copying (複製)",
+        "description": "Instead of an unavailable, expensive, fragile object, use simpler and inexpensive copies. Replace an object, or process with optical copies. (用簡單便宜的複製品代替不可用、昂貴或脆弱的物體。用光學複製品代替物體。)",
+        "examples": [
+            "Virtual prototyping (虛擬原型)",
+            "Dummy targets (假目標)"
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Cheap short-living objects (廉價替代品)",
+        "description": "Replace an expensive object with a multiple of inexpensive objects, comprising certain qualities (such as service life, for instance). (用多個廉價物體代替一個昂貴物體，雖然犧牲某些品質（如壽命）。)",
+        "examples": [
+            "Paper cups (紙杯)",
+            "Disposable diapers (紙尿褲)"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Mechanics substitution (機械系統替代)",
+        "description": "Replace a mechanical means with a sensory (optical, acoustic, taste or smell) means. Use electric, magnetic and electromagnetic fields to interact with the object. (用感官（光、聲、味、嗅）手段代替機械手段。使用電場、磁場或電磁場。)",
+        "examples": [
+            "Voice recognition instead of typing (語音識別)",
+            "Maglev train (磁浮列車)"
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Pneumatics and hydraulics (氣壓與液壓)",
+        "description": "Use gas and liquid parts of an object instead of solid parts (e.g. inflatable, filled with liquids, air cushion, hydrostatic, hydro-reactive). (使用氣體或液體部件代替固體部件（如充氣、液壓、氣墊）。)",
+        "examples": [
+            "Gel shoe inserts (凝膠鞋墊)",
+            "Air brakes (氣壓煞車)"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Flexible shells and thin films (柔性殼與薄膜)",
+        "description": "Use flexible shells and thin films instead of three-dimensional structures. Isolate the object from the external environment using flexible shells and thin films. (使用柔性殼和薄膜代替三維結構。用柔性殼和薄膜隔離物體與外部環境。)",
+        "examples": [
+            "Bubble wrap (氣泡紙)",
+            "Contact lenses (隱形眼鏡)"
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Porous materials (多孔材料)",
+        "description": "Make an object porous or add porous elements (inserts, coatings, etc.). If an object is already porous, use the pores to introduce a useful substance or function. (使物體多孔或添加多孔元件。如果物體已多孔，利用孔隙引入有用的物質或功能。)",
+        "examples": [
+            "Sponges (海綿)",
+            "Medicated patches (藥用貼片)"
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Color changes (改變顏色)",
+        "description": "Change the color of an object or its external environment. Change the transparency of an object or its external environment. (改變物體或外部環境的顏色。改變透明度。)",
+        "examples": [
+            "Photochromic lenses (變色鏡片)",
+            "Thermal sensitive paint (熱感測漆)"
+        ]
+    },
+    {
+        "id": 33,
+        "name": "Homogeneity (同質性)",
+        "description": "Make objects interacting with a given object of the same material (or material with identical properties). (讓與給定物體互動的物體由相同材料（或性質相同的材料）製成。)",
+        "examples": [
+            "Diamond cutting diamond (鑽石切割鑽石)",
+            "Welding with same material rod (同材質焊條)"
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Discarding and recovering (拋棄與再生)",
+        "description": "Make portions of an object that have fulfilled their functions go away (discard by dissolving, evaporating, etc.) or modify these directly during operation. Conversely, restore consumable parts of an object directly in operation. (讓已完成功能的物體部分消失（溶解、蒸發等）或在操作中直接修改。反之，在操作中恢復消耗的部分。)",
+        "examples": [
+            "Dissolvable stitches (可吸收縫線)",
+            "Self-healing materials (自癒合材料)"
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Parameter changes (參數改變)",
+        "description": "Change an object's physical state (e.g. to a gas, liquid, or plasma). Change the concentration or consistency. Change the degree of flexibility. Change the temperature. (改變物體的物理狀態。改變濃度或稠度。改變靈活性。改變溫度。)",
+        "examples": [
+            "Freeze chocolates to hold liquid center (冷凍巧克力以包覆液態核心)",
+            "Liquid soap (液體肥皂)"
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Phase transitions (相變)",
+        "description": "Use phenomena occurring during phase transitions (e.g. volume changes, loss or absorption of heat, etc.). (利用相變過程中發生的現象（如體積變化、吸放熱等）。)",
+        "examples": [
+            "Heat pipes (熱管)",
+            "Evaporative cooling (蒸發冷卻)"
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Thermal expansion (熱膨脹)",
+        "description": "Use thermal expansion (or contraction) of materials. If thermal expansion is being used, use multiple materials with different coefficients of thermal expansion. (利用材料的熱膨脹（或收縮）。如果已利用熱膨脹，使用多種不同膨脹係數的材料。)",
+        "examples": [
+            "Bimetallic strip thermostat (雙金屬片恆溫器)",
+            "Shrink fitting (熱脹冷縮配合)"
+        ]
+    },
+    {
+        "id": 38,
+        "name": "Strong oxidants (強氧化劑)",
+        "description": "Replace common air with oxygen-enriched air. Replace enriched air with pure oxygen. Expose air or oxygen to ionizing radiation. Use ozonized oxygen. Replace ozonized (or ionized) oxygen with ozone. (用富氧空氣代替普通空氣。用純氧代替富氧空氣。將空氣或氧氣暴露於電離輻射。使用臭氧。)",
+        "examples": [
+            "Hyperbaric oxygen therapy (高壓氧治療)",
+            "Ozone sterilization (臭氧消毒)"
+        ]
+    },
+    {
+        "id": 39,
+        "name": "Inert atmosphere (惰性環境)",
+        "description": "Replace a normal environment with an inert one. Add neutral parts, or inert additives to an object. (用惰性環境代替正常環境。添加中性部件或惰性添加劑。)",
+        "examples": [
+            "Argon welding (氬弧焊)",
+            "Vacuum packing (真空包裝)"
+        ]
+    },
+    {
+        "id": 40,
+        "name": "Composite materials (複合材料)",
+        "description": "Change from uniform to composite (multiple) materials. (從均勻材料改為複合材料。)",
+        "examples": [
+            "Carbon fiber composites (碳纖維複合材料)",
+            "Reinforced concrete (鋼筋混凝土)"
+        ]
+    }
+]
